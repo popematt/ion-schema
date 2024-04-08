@@ -88,7 +88,6 @@ When the document is ready, open a PR that adds your `.md` file to the folder `r
 1. A link to the original issue from step 1.
 2. A link directing users to a rendered version of the `.md` content.
 
-
 The Ion **maintainers** will add a link to your proposal to [the Ion home page](https://amzn.github.io/ion-docs/) and to [the Ion news page](https://amzn.github.io/ion-docs/news.html). Members of the Ion community at large will be able to comment on the proposal.
 
 Discussion of the RFC involves two phases. The first phase is not time-bound, and is intended to allow thorough evaluation of the technical details of the proposal, including its impact on the broader Ion ecosystem. Changes may be requested and can be added to the proposal via new commits on the PR. When the Ion Schema **maintainers** deem the proposal is mature, a final comment period of at least two weeks will be announced, marking the beginning of phase two.
@@ -128,9 +127,9 @@ As before, announcements will be added to the Ion home and news pages.
 
 ## Requesting an RFC
 
-When a community member creates a feature request in `ion-schema`, we (the Ion Schema **maintainers**) will engage with the requester on the GitHub issue. The **maintainers** will come to a consensus on the proposal; if its value proposition is compelling, we will request an RFC to explore the technical details of its implementation in depth. If the perceived value of the proposal is too low compared to the effort/expense required to implement it, we will politely decline. However, this does not preclude the
+When a community member creates a feature request in `ion-schema`, we (the Ion Schema **maintainers**) will engage with the requester on the GitHub issue. The **maintainers** will come to a consensus on the proposal; if its value proposition is compelling, we will request an RFC to explore the technical details of its implementation in depth. If the proposal does not add value or goes against the design principles of Ion Schema, we will politely decline. However, this does not preclude the **feature requestor** or any other **contributor** from revising and resubmitting their proposal with new ideas or information.
 
-Either way, the Ion schema **maintainers** must respond with a justification for our decision. For a feature that is approved, a simple message about how the feature will be useful, aligns with the design goals, etc. will suffice. For a rejection, the justification should specifically explain why the idea does not add significant value to Ion Schema or how it goes against the design principals of Ion Schema.
+Either way, the Ion schema **maintainers** must respond with a justification for our decision. For a feature that is approved, a simple message about how the feature will be useful, aligns with the design goals, etc. will suffice. For a rejection, the justification should specifically explain why the idea does not add value to Ion Schema or how it goes against the design principles of Ion Schema.
 
 If we are interested in an idea but **feature requestor** does not want to create an RFC, we may decide to take it up ourselves, but we are not required to do so.
 
@@ -151,12 +150,9 @@ When we should create a new version depends on our subjective judgment of whethe
 * How many accepted features are waiting to be released in a new version of the ISL spec?
 * Has anyone specifically asked for a new version to be released?
 * Do we have the bandwidth to implement the new version in Ion Schema libraries?
-* Has a **contributor** outside of the team of **maintainers** offered to help implement the new version?
-
+* Has a **contributor** outside the team of **maintainers** offered to help implement the new version?
 
 We should be transparent if we do not have the bandwidth to implement a new version, but we should not stand in the way of someone who is willing to invest their own time in improving Ion Schema.
-
-
 
 # FAQ
 
