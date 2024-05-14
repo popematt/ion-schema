@@ -15,7 +15,7 @@ The following are the goals that inform the rest of this document.
 
 ## Ion Schema Design Guidelines
 
-Loosely based on the [original ISL 1.0 rational](https://amazon-ion.github.io/ion-schema/docs/isl-1-0/spec#rationale), they are:
+Loosely based on the [original ISL 1.0 rationale](https://amazon-ion.github.io/ion-schema/docs/isl-1-0/spec#rationale), they are:
 
 * Follow the principle of least surprise
 * Have a minimal set of orthogonal constraints
@@ -36,7 +36,7 @@ The following are key actors in the process for evolving the Ion Schema Language
 ## Summary
 
 * A **feature requestor** submits an issue suggesting an idea or describing a problem.
-* Ion Schema **maintainers** informally decide whether it is a good idea (and explains, with adequate justification, why or why not the idea should be included).
+* Ion Schema **maintainers** informally decide whether it is a good idea (and explain, with adequate justification, why or why not the idea should be included).
 * The **feature requestor** or another **contributor** formalizes the details of the feature in an RFC.
 * The **maintainers** announce a public comment period. (The public has been able to see and comment on the PR this whole time, but this step is an official, time-bounded, public comment period intended to bring closure to the proposal.)
 * If accepted, the **maintainers** will merge the RFC PR.
@@ -60,7 +60,8 @@ This GitHub issue will allow the **maintainers** to discuss the proposal and dec
 
 If a change is backwards compatible, it may be included in a new *minor* version of the specification. Any changes that are not backwards compatible must be released in a new *major* version of the specification. To learn more about what kinds of changes can be released in a minor version bump, please review the document [*Ion Schema Language Versioning*](https://amazon-ion.github.io/ion-schema/docs/isl-versioning).
 
-Following discussion, the Ion Schema **maintainers** will either close the issue or leave it open and ask the requestor for a full specification.
+Following discussion, the Ion Schema **maintainers** will either close the issue or leave it open pending a full specification.
+The **requestor** and/or the **maintainers** may write the specification for the feature, but neither are required to do so; the specification may be written by any **contributor**.
 
 ## 2. Write a specification for the feature
 
@@ -78,7 +79,7 @@ Create a Markdown file (`.md`) that describes the feature you would like Ion Sch
   * Could the functionality you need be provided using application-defined open content in Ion Schema? (For example, a ISL based code generator does not need a `javadoc` field added to the spec when an open content field called `_javadoc` would suffice.)
   * Did you tinker with different syntax and semantics for your feature before ultimately going with your current proposal? List them here and explain why they were less optimal.
 
-For examples, please see the feature RFCs for Ion Schema [*Open Content*](https://github.com/amazon-ion/ion-schema/blob/208165adb10c889949252e7ccd926862bfe60019/rfcs/ion_schema_2_0/open_content.md)  or Ion 1.1 *[Templates](https://github.com/amzn/ion-docs/blob/bf33a708d806e46bc24e6bad4a95c12fa359bac8/rfcs/ion_1_1/feature-templates.md#rfc-ion-templates)* and *[Inlineable Symbols](https://github.com/amzn/ion-docs/blob/bf33a708d806e46bc24e6bad4a95c12fa359bac8/rfcs/ion_1_1/ion_1_1.md#inline-symbols).*
+For examples, please see the feature RFCs for Ion Schema [*Open Content*](https://github.com/amazon-ion/ion-schema/blob/208165adb10c889949252e7ccd926862bfe60019/rfcs/ion_schema_2_0/open_content.md) or Ion 1.1 *[Templates](https://github.com/amzn/ion-docs/blob/bf33a708d806e46bc24e6bad4a95c12fa359bac8/rfcs/ion_1_1/feature-templates.md#rfc-ion-templates)* and *[Inlineable Symbols](https://github.com/amzn/ion-docs/blob/bf33a708d806e46bc24e6bad4a95c12fa359bac8/rfcs/ion_1_1/ion_1_1.md#inline-symbols).*
 For examples of shorter RFCs [Add Constraints for Smaller IEEE-754 Binary Types · Issue #18 · amazon...](https://github.com/amazon-ion/ion-schema/issues/18#issuecomment-1092130146) and [*Allow field names to be constrained without exact field names being sp...*](https://github.com/amazon-ion/ion-schema/issues/44#issuecomment-1097296761). (Note that these were created prior to the requirement for RFCs to be a markdown document, but in terms of content, they are examples of an RFC.)
 
 #### Open a feature PR
@@ -104,7 +105,7 @@ Note that in some circumstances, the RFC may need to be modified between the PR 
 *Ion Schema Version RFCs* are meta-RFCs that describe a new version of Ion Schema. They are PRs created by the **maintainers**, not by community members proposing a new feature. Version RFCs include a `.md` file that contains:
 
 * A list of the feature RFCs to be included in the new version, including for each a brief summary and a link to the accepted RFC for that feature. Links to other documentation may also be included.
-* The list of all accepted feature RFCs that are *not* included in the new version, with a reason why it is not included.
+* The list of all accepted feature RFCs that are *not* included in the new version, with reasons why they are not included.
 * If it is a new major version, a definition of the compatibility and import requirements between this version and the prior major version, as required by [Ion Schema Language Versions](https://quip-amazon.com/WxDyAMCsxccV).
 
 For an example, please see [the Ion Schema 2.0 RFC](https://github.com/amazon-ion/ion-schema/blob/208165adb10c889949252e7ccd926862bfe60019/rfcs/ion_schema_2_0/ion_schema_2_0.md) ([PR](https://github.com/amazon-ion/ion-schema/pull/69)).
