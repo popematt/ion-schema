@@ -171,4 +171,4 @@ Regardless of the source, the **maintainers** will attempt to publicly summarize
 
 #### Can a feature RFC become “un-accepted”?
 
-Yes. An RFC can be “un-accepted” by another RFC that explicitly revokes or supersedes a prior RFC. This “un-acceptance” RFC is expected to go through the same process as any other RFC.
+Yes. An RFC can be reverted by another RFC that explicitly revokes or supersedes a prior RFC. An RFC that reverts or supersedes a previous RFC is expected to go through the same process as any other RFC.
